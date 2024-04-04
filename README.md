@@ -1,4 +1,5 @@
 # Lockbox Solana
+Set of liquidity lockbox contracts on Solana for Olas protocol.
 
 ## Introduction
 This folder contains the liquidity lockbox set of contracts on Solana.
