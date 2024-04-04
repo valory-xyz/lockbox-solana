@@ -21,8 +21,8 @@ overflow-checks = true
 [dependencies]
 anchor-lang = "0.26.0"
 anchor-spl = "0.26.0"
-spl-token = {version = "3.3", features = ["no-entrypoint"]}
-whirlpool = { git = "https://github.com/orca-so/whirlpools", package = "whirlpool", features = ["cpi"] }
+spl-token = { version = "3.3", features = ["no-entrypoint"] }
+whirlpool = { git = "https://github.com/orca-so/whirlpools", package = "whirlpool", features = ["cpi"], tag = "0.11.3" }
 
 # MSRV related
 solana-program = "=1.14.29"

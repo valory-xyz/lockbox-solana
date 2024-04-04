@@ -172,24 +172,6 @@ async function main() {
     // tx: 3quuoWcFfUbvwkbdihZcuhe5Ed8HGwGojDqbCDWbJV7aS21f6LWzNaXNVNkBoSr4NKKyTdKTXvPJ5isoNXdivckB
 
     console.log("Successfully initialized lockbox");
-
-//    // Update fee collector authority
-//    try {
-//      // Attempt to change owner of Associated Token Account
-//      await setAuthority(
-//        provider.connection, // Connection to use
-//        userWallet, // Payer of the transaction fee
-//        feeCollectorTokenOwnerAccountA.address, // Associated Token Account
-//        userWallet.publicKey, // Owner of the Associated Token Account
-//        AuthorityType.AccountOwner, // Type of Authority
-//        pdaProgram, // New Account Owner
-//        undefined, // Additional signers
-//        undefined, // Confirmation options
-//        TOKEN_PROGRAM_ID, // Token Extension Program ID
-//      );
-//    } catch (error) {
-//      console.log("\nExpect Error:", error);
-//    }
 }
 
 main();

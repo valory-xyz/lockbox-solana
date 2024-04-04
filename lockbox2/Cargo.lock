@@ -2076,7 +2076,7 @@ dependencies = [
 [[package]]
 name = "whirlpool"
 version = "0.2.0"
-source = "git+https://github.com/orca-so/whirlpools#3206c9cdfbf27c73c30cbcf5b6df2929cbf87618"
+source = "git+https://github.com/orca-so/whirlpools?tag=0.11.3#7f7ee90b25dddd1382786ac98eb9240fd3bb19b5"
 dependencies = [
  "anchor-lang",
  "anchor-spl",
