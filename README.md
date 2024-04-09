@@ -13,7 +13,6 @@ The description of the concept can be found here:
 
 ## Pre-requisites
 A successful program CPI with Orca Whirlpool program requires that the following environment is satisfied:
-
 ```
 anchor --version
 anchor-cli 0.26.0
