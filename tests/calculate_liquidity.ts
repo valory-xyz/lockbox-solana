@@ -1,18 +1,10 @@
 import * as anchor from "@coral-xyz/anchor";
 import { Program } from "@coral-xyz/anchor";
 import {
-  createMint, mintTo, transfer, getOrCreateAssociatedTokenAccount, syncNative,
-  unpackAccount, TOKEN_PROGRAM_ID, AccountLayout, getAssociatedTokenAddress
-} from "@solana/spl-token";
-import {
-  WhirlpoolContext, buildWhirlpoolClient, ORCA_WHIRLPOOL_PROGRAM_ID,
-  PDAUtil, PoolUtil, PriceMath, increaseLiquidityQuoteByInputTokenWithParams,
-  decreaseLiquidityQuoteByLiquidityWithParams, TickUtil
+  WhirlpoolContext, buildWhirlpoolClient, PriceMath, increaseLiquidityQuoteByInputTokenWithParams, TickUtil
 } from "@orca-so/whirlpools-sdk";
 import { DecimalUtil, Percentage } from "@orca-so/common-sdk";
 import Decimal from "decimal.js";
-import expect from "expect";
-import fs from "fs";
 
 // UNIX/Linux/Mac
 // bash$ export ANCHOR_PROVIDER_URL=https://api.mainnet-beta.solana.com
