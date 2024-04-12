@@ -73,6 +73,13 @@ For debugging a program address, after the launch of local validator, run:
 solana logs -v --url localhost 7ahQGWysExobjeZ91RTsNqTCN3kWyHGZ43ud2vB7VVoZ
 ```
 
+In order to just calculate and verify the added liquidity, export your credentials and execute the corresponding script:
+```
+export ANCHOR_PROVIDER_URL=https://api.mainnet-beta.solana.com
+export ANCHOR_WALLET=your_wallet.json
+npx ts-node tests/calculate_liquidity.ts
+```
+
 ## Documents
 All the project-related documents are located here: [docs](https://github.com/valory-xyz/lockbox-solana/blob/main/doc).
 
