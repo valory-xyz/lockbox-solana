@@ -11,6 +11,25 @@ equivalents to the liquidity created by depositing a such amount of OLAS and SOL
 The description of the concept can be found here:
 [Liquidity lockbox concept](https://github.com/valory-xyz/lockbox-solana/blob/main/doc/Bonding_mechanism_with_liquidity_on_Solana.pdf).
 
+## Lockbox Flowchart
+```mermaid
+    graph TD
+    OLAS[OLAS]
+    SOL[SOL]
+    Lockbox[Liquidity Lockbox]
+    Orca[Orca]
+    OLAS_Holder([OLAS and SOL Holder])
+    Bridged_Token[LP Bridged Token]
+    
+    OLAS_Holder-->|approve|OLAS
+    OLAS_Holder-->|approve|SOL
+    OLAS_Holder-->|deposit, withdraw OLAS + SOL|Lockbox
+    Lockbox==>|CPI call ModifyLiquidity|Orca
+    Orca==>|LP position modification|Lockbox
+    Lockbox-->|mint|Bridged_Token
+    Bridged_Token-->|transfer|OLAS_Holder
+```
+
 ## Pre-requisites
 A successful program CPI with Orca Whirlpool program requires that the following environment is satisfied:
 ```
